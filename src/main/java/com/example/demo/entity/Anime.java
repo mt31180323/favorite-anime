@@ -39,11 +39,11 @@ public class Anime {
 		public void setTitle(String title) {
 			this.title = title;
 		}
-		public String getMeno() {
+		public String getMemo() {
 			return memo;
 		}
-		public void setMeno(String meno) {
-			this.memo = meno;
+		public void setMemo(String memo) {
+			this.memo = memo;
 		}
 		
 }
