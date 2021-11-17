@@ -16,10 +16,10 @@ public class AnimeController {
 
 		@RequestMapping("/list")
 		public String list(Model model) {
-			List<Anime> result = new ArrayList<Anime>(); 
+			List<Anime> animes = new ArrayList<Anime>(); 
 			
-			Anime tensura = new Anime(1,"転スラ","スライム")；
-			Anime kimetsu = new Anime(2,"鬼滅の刃","きめつ")；
+			Anime tensura = new Anime(1,"転スラ","スライム");
+			Anime kimetsu = new Anime(2,"鬼滅の刃","きめつ");
 
 			animes.add(tensura);
 			animes.add(kimetsu);
