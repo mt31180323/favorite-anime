@@ -24,18 +24,25 @@ import com.example.demo.service.AnimeService;
 //		}
 	
 	
-@RequestMapping("Anime")
-public class AnimeController {
+//@RequestMapping("Anime")
+//public class AnimeController {
+//
+//	    @Autowired
+//	    AnimeService Service;
+//
+//	    @RequestMapping(value="list")
+//	    public String list(Model model) {
+//	        Collection<Product> products = animeService.findAll();
+//	        model.addAttribute("products", products);
+//	        return "list";
+//	    }
+//}
 
-	    @Autowired
-	    AnimeService animeService;
 
-	    @RequestMapping(value="list")
-	    public String list(Model model) {
-	        Collection<Product> products = animeService.findAll();
-	        model.addAttribute("products", products);
-	        return "list";
-	    }
-	
-	
-}
+		public class AnimeController{
+		    @GetMapping("/list")
+		    public String getList(){
+		        return"list";  //hello.htmlに画面遷移
+
+		    }
+		}
